@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contact & Enroll | VisionTechie IT Training Institute</title>
+  <meta name="description" content="Contact VisionTechie or enroll in your preferred IT course. Free demo classes available. Call +91 98765 43210."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+</head>
+<body>
+<canvas id="particles-canvas"></canvas>
+
+<header class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">VT</div><span class="logo-text">Vision<span class="accent">Techie</span></span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="courses.html" class="nav-link">Courses</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="contact.html#enroll" class="nav-cta">Enroll Now</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <span class="tag">Get In Touch</span>
+    <h1>Contact <span class="gradient-text">VisionTechie</span></h1>
+    <p>Have questions? We're here to help. Reach out and start your tech journey today.</p>
+  </div>
+</div>
+
+<!-- CONTACT INFO CARDS -->
+<section class="section">
+  <div class="container">
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Visit Us</h3>
+        <p>123 Tech Park, Banjara Hills<br/>Hyderabad, Telangana – 500034</p>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon"><i class="fas fa-phone"></i></div>
+        <h3>Call Us</h3>
+        <p><a href="tel:+919876543210">+91 98765 43210</a><br/><a href="tel:+919876543211">+91 98765 43211</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Email Us</h3>
+        <p><a href="mailto:info@visiontechie.com">info@visiontechie.com</a><br/><a href="mailto:admissions@visiontechie.com">admissions@visiontechie.com</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon"><i class="fas fa-clock"></i></div>
+        <h3>Working Hours</h3>
+        <p>Monday – Saturday<br/>8:00 AM – 8:00 PM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENROLL FORM -->
+<section class="section dark-bg" id="enroll">
+  <div class="container">
+    <div class="form-layout">
+      <div class="form-info">
+        <span class="tag">Free Enrollment Inquiry</span>
+        <h2>Start Your <span class="gradient-text">Tech Career</span> Today</h2>
+        <p>Fill in the form and our counsellor will contact you within 24 hours. Free demo class guaranteed!</p>
+        <div class="form-perks">
+          <div class="perk"><i class="fas fa-check-circle"></i> Free Demo Class</div>
+          <div class="perk"><i class="fas fa-check-circle"></i> Course Counselling</div>
+          <div class="perk"><i class="fas fa-check-circle"></i> Flexible Batch Options</div>
+          <div class="perk"><i class="fas fa-check-circle"></i> EMI Facility Available</div>
+          <div class="perk"><i class="fas fa-check-circle"></i> 100% Placement Support</div>
+          <div class="perk"><i class="fas fa-check-circle"></i> Industry Certifications</div>
+        </div>
+        <div class="form-contact-quick">
+          <a href="https://wa.me/919876543210" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+          <a href="tel:+919876543210" class="btn btn-ghost"><i class="fas fa-phone"></i> Call Now</a>
+        </div>
+      </div>
+      <div class="form-box">
+        <h3>Inquiry / Enrollment Form</h3>
+        <form id="enroll-form" class="enroll-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Your first name" required/>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required/>
+          </div>
+          <div class="form-group">
+            <label for="course">Interested Course *</label>
+            <select id="course" name="course" required>
+              <option value="">Select a Course</option>
+              <option value="java">Java Full Stack Development</option>
+              <option value="python">Python Full Stack Development</option>
+              <option value="cloud">Cloud Computing (AWS/Azure/GCP)</option>
+              <option value="devops">DevOps Engineering</option>
+              <option value="testing">Software Testing (Manual + Automation)</option>
+              <option value="datascience">Data Science & Artificial Intelligence</option>
+              <option value="other">Other / Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="edu">Highest Education *</label>
+              <select id="edu" name="edu" required>
+                <option value="">Select</option>
+                <option>10th / SSC</option>
+                <option>12th / Inter</option>
+                <option>Diploma</option>
+                <option>B.Tech / BE</option>
+                <option>BCA / BSc (CS)</option>
+                <option>MCA / M.Tech</option>
+                <option>MBA / Other PG</option>
+                <option>Working Professional</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="batch">Preferred Batch</label>
+              <select id="batch" name="batch">
+                <option value="">Select</option>
+                <option>Weekday Morning (9AM–1PM)</option>
+                <option>Weekday Evening (6PM–9PM)</option>
+                <option>Weekend Batch</option>
+                <option>Fast Track</option>
+                <option>Online / Live</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="msg">Message (Optional)</label>
+            <textarea id="msg" name="msg" rows="3" placeholder="Any specific questions or requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" id="submit-btn">
+            <i class="fas fa-paper-plane"></i> Submit Inquiry
+          </button>
+        </form>
+        <div class="success-msg" id="success-msg" style="display:none">
+          <i class="fas fa-check-circle"></i>
+          <h3>Thank You! 🎉</h3>
+          <p>Your inquiry has been received. Our counsellor will contact you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head"><span class="tag">Location</span><h2>Find <span class="gradient-text">Us Here</span></h2></div>
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6760099!2d78.4456!3d17.4100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI0JzM2LjAiTiA3OMKwMjYnNDQuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+        width="100%" height="400" style="border:0;border-radius:16px;" allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="f-brand"><div class="nav-logo"><div class="logo-icon">VT</div><span class="logo-text">Vision<span class="accent">Techie</span></span></div><p>Premier IT training institute with 100% placement support.</p><div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div>
+    <div class="f-col"><h4>Courses</h4><ul><li><a href="courses.html#java">Java Full Stack</a></li><li><a href="courses.html#python">Python Full Stack</a></li><li><a href="courses.html#cloud">Cloud Computing</a></li><li><a href="courses.html#devops">DevOps</a></li><li><a href="courses.html#testing">Software Testing</a></li><li><a href="courses.html#datascience">Data Science & AI</a></li></ul></div>
+    <div class="f-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="courses.html">All Courses</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="f-col"><h4>Contact</h4><ul class="fcontact"><li><i class="fas fa-map-marker-alt"></i> 123 Tech Park, Banjara Hills, Hyderabad – 500034</li><li><i class="fas fa-phone"></i><a href="tel:+919876543210">+91 98765 43210</a></li><li><i class="fas fa-envelope"></i><a href="mailto:info@visiontechie.com">info@visiontechie.com</a></li></ul></div>
+  </div>
+  <div class="f-bottom"><p>&copy; 2024 VisionTechie IT Training Institute. All Rights Reserved.</p></div>
+</footer>
+<button class="scroll-top" id="scroll-top-btn"><i class="fas fa-chevron-up"></i></button>
+<a href="https://wa.me/919876543210" class="wa-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="js/main.js"></script>
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('enroll-form').style.display = 'none';
+  document.getElementById('success-msg').style.display = 'flex';
+}
+</script>
+</body>
+</html>
