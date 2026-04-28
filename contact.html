@@ -6,6 +6,44 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Contact & Enroll | VisionTechie IT Training Institute</title>
   <meta name="description" content="Contact VisionTechie or enroll in your preferred IT course. Free demo classes available. Call +91 90677 31749." />
+
+  <!-- SEO & Social Sharing Tags -->
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="canonical" href="https://visiontechie.com/contact.html" />
+  <meta property="og:title" content="Contact & Enroll | VisionTechie IT Training Institute" />
+  <meta property="og:description" content="Contact VisionTechie or enroll in your preferred IT course. Free demo classes available. Call +91 90677 31749." />
+  <meta property="og:image" content="https://visiontechie.com/images/logo.png" />
+  <meta property="og:url" content="https://visiontechie.com/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- SEO SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "VisionTechie",
+    "description": "India's premier IT training institute offering courses in Java, Python, Cloud, DevOps, and Data Science.",
+    "url": "https://visiontechie.com",
+    "logo": "https://visiontechie.com/images/logo.png",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Gurudwara Chowk, Akurdi",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Shirpur",
+        "addressLocality": "Dhule",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    ],
+    "telephone": "+919067731749"
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
@@ -54,7 +92,7 @@
         <div class="contact-card">
           <div class="cc-icon"><i class="fas fa-phone"></i></div>
           <h3>Call Us</h3>
-          <p><a href="tel:+919067731749">+91 9067731749</a><br /><a href="tel:+919067731749">+91 9067731749</a></p>
+          <p><a href="tel:+919067731749">+91 90677 31749</a><br />(Mon-Sat, 8AM-8PM)</p>
         </div>
         <div class="contact-card">
           <div class="cc-icon"><i class="fas fa-envelope"></i></div>
@@ -203,10 +241,13 @@
         <div class="nav-logo">
           <div class="logo-icon">VT</div><span class="logo-text">Vision<span class="accent">Techie</span></span>
         </div>
-        <p>Premier IT training institute with dedicated career support.</p>
-        <div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
-              class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i
-              class="fab fa-youtube"></i></a></div>
+        <p>Premier IT training institute empowering students with cutting-edge technology skills and dedicated career support.</p>
+        <div class="socials">
+          <a href="https://facebook.com/visiontechie" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/visiontechie" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/company/visiontechie" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/@visiontechie" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
       </div>
       <div class="f-col">
         <h4>Courses</h4>
@@ -226,6 +267,8 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="courses.html">All Courses</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
         </ul>
       </div>
       <div class="f-col">
@@ -234,21 +277,53 @@
           <li><i class="fas fa-map-marker-alt"></i> Gurudwara Chowk, Akurdi, Pune | Shirpur, Dhule</li>
           <li><i class="fas fa-phone"></i><a href="tel:+919067731749">+91 90677 31749</a></li>
           <li><i class="fas fa-envelope"></i><a href="mailto:info@visiontechie.com">info@visiontechie.com</a></li>
+          <li><i class="fas fa-clock"></i> Mon–Sat: 8AM – 8PM</li>
         </ul>
       </div>
     </div>
     <div class="f-bottom">
-      <p>&copy; 2024 VisionTechie IT Training Institute. All Rights Reserved.</p>
+      <p>&copy; <span id="year">2026</span> VisionTechie IT Training Institute. All Rights Reserved.</p>
     </div>
   </footer>
   <button class="scroll-top" id="scroll-top-btn"><i class="fas fa-chevron-up"></i></button>
   <a href="https://wa.me/919067731749" class="wa-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
   <script src="js/main.js"></script>
   <script>
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
       e.preventDefault();
-      document.getElementById('enroll-form').style.display = 'none';
-      document.getElementById('success-msg').style.display = 'flex';
+      const form = e.target;
+      const btn = document.getElementById('submit-btn');
+      const originalText = btn.innerHTML;
+      
+      // Update UI to show loading state
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+      btn.disabled = true;
+
+      const data = new FormData(form);
+
+      try {
+        // Formspree API endpoint - Replace 'YOUR_FORM_ID' with your actual Formspree ID
+        const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+          method: "POST",
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById('success-msg').style.display = 'flex';
+          form.reset();
+        } else {
+          alert("Oops! There was a problem submitting your form. Please try again.");
+        }
+      } catch (error) {
+        alert("Oops! There was a network error. Please try again or call us directly.");
+      } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
     }
   </script>
 </body>

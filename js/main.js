@@ -143,3 +143,9 @@ setInterval(() => goTo((currentT + 1) % document.querySelectorAll('.tcard').leng
 // ============= SCROLL TOP =============
 const scrollBtn = document.getElementById('scroll-top-btn');
 if (scrollBtn) scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// ============= DYNAMIC YEAR =============
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
