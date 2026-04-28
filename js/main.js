@@ -87,7 +87,7 @@ function typeEffect() {
 }
 typeEffect();
 
-// ============= SCROLL REVEAL =============
+// ============= SCROLL REVEAL (STAGGERED) =============
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -97,10 +97,25 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.feat-card, .course-card, .partner, .about-txt, .sec-head, .tcard.active').forEach(el => {
-  el.classList.add('reveal');
-  revealObserver.observe(el);
-});
+const addReveal = (selector, stagger = false) => {
+  const elements = document.querySelectorAll(selector);
+  elements.forEach((el, i) => {
+    el.classList.add('reveal');
+    if (stagger) el.style.transitionDelay = `${(i % 10) * 100}ms`;
+    revealObserver.observe(el);
+  });
+};
+
+addReveal('.sec-head');
+addReveal('.about-txt');
+addReveal('.tcard.active');
+addReveal('.feat-card', true);
+addReveal('.course-card', true);
+addReveal('.partner', true);
+addReveal('.sb-item', true);
+addReveal('.trainer-card', true);
+addReveal('.cert-card', true);
+addReveal('.contact-card', true);
 
 // Trigger counters on hero stats visible
 const heroStats = document.querySelector('.hero-stats');
