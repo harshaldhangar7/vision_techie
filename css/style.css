@@ -441,5 +441,16 @@ ul { list-style: none; }
 [data-theme="light"] .f-col h4 { color: var(--text); }
 [data-theme="light"] .form-perks .perk { background: rgba(0,0,0,0.03); }
 [data-theme="light"] .form-group input, [data-theme="light"] .form-group select { background: #fff; color: var(--text); border-color: var(--border); }
-[data-theme="light"] .theme-toggle-btn { background: rgba(0,0,0,0.05); color: var(--text); border-color: var(--border); }
 [data-theme="light"] .theme-toggle-btn:hover { background: var(--grad); color: white; border-color: transparent; }
+
+/* --- TEXT HIGHLIGHT --- */
+.text-highlight {
+  background: rgba(59,130,246,0.15);
+  color: var(--primary);
+  padding: 0 0.4rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+[data-theme="light"] .text-highlight {
+  background: rgba(59,130,246,0.1);
+}
