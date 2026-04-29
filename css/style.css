@@ -209,8 +209,8 @@ ul { list-style: none; }
   background: rgba(59,130,246,0.1); display: flex; align-items: center; justify-content: center;
   font-size: 1.4rem; color: var(--primary); margin-bottom: 1.2rem;
 }
-.feat-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.6rem; }
-.feat-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
+.feat-card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.6rem; }
+.feat-card p { color: var(--muted); font-size: 1rem; line-height: 1.65; }
 
 /* --- COURSES GRID --- */
 .courses-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
@@ -238,8 +238,8 @@ ul { list-style: none; }
   background: rgba(59,130,246,0.15); color: var(--primary); border: 1px solid rgba(59,130,246,0.25);
 }
 .c-badge.hot { background: rgba(239,68,68,0.12); color: #f87171; border-color: rgba(239,68,68,0.25); }
-.course-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.6rem; }
-.course-card p { color: var(--muted); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.2rem; }
+.course-card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.6rem; }
+.course-card p { color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.2rem; }
 .c-meta { display: flex; gap: 1rem; font-size: 0.8rem; color: var(--muted); margin-bottom: 1.2rem; }
 .c-meta span { display: flex; align-items: center; gap: 0.35rem; }
 .c-btn {
