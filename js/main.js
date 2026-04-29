@@ -149,3 +149,36 @@ const yearSpan = document.getElementById('year');
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
+
+// ============= THEME TOGGLE =============
+const themeToggle = document.getElementById('theme-toggle');
+const htmlEl = document.documentElement;
+const themeIcons = { 'system': 'fa-desktop', 'light': 'fa-sun', 'dark': 'fa-moon' };
+const themes = ['system', 'light', 'dark'];
+
+function applyTheme(theme) {
+  if (theme === 'system') {
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    htmlEl.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  } else {
+    htmlEl.setAttribute('data-theme', theme);
+  }
+  if (themeToggle) themeToggle.innerHTML = `<i class="fas ${themeIcons[theme]}"></i>`;
+  localStorage.setItem('vt_theme', theme);
+}
+
+let currentThemeIndex = 0;
+const savedTheme = localStorage.getItem('vt_theme') || 'system';
+currentThemeIndex = themes.indexOf(savedTheme) !== -1 ? themes.indexOf(savedTheme) : 0;
+applyTheme(themes[currentThemeIndex]);
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+    applyTheme(themes[currentThemeIndex]);
+  });
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+  if (themes[currentThemeIndex] === 'system') applyTheme('system');
+});
