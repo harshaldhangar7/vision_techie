@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>VisionTechie | Premier IT Training Institute</title>
-  <meta name="description" content="VisionTechie – India's premier IT training institute. Java, Python, Cloud, DevOps, Data Science. 100% placement support."/>
-  
+  <meta name="description"
+    content="VisionTechie – India's premier IT training institute. Java, Python, Cloud, DevOps, Data Science. 100% placement support." />
+
   <!-- SEO & Social Sharing Tags -->
   <link rel="icon" href="images/logo.png" type="image/png" />
   <link rel="canonical" href="https://visiontechie.com/" />
   <meta property="og:title" content="VisionTechie | Premier IT Training Institute" />
-  <meta property="og:description" content="VisionTechie – India's premier IT training institute. Java, Python, Cloud, DevOps, Data Science. 100% placement support." />
+  <meta property="og:description"
+    content="VisionTechie – India's premier IT training institute. Java, Python, Cloud, DevOps, Data Science. 100% placement support." />
   <meta property="og:image" content="https://visiontechie.com/images/logo.png" />
   <meta property="og:url" content="https://visiontechie.com/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <!-- SEO SCHEMA MARKUP -->
   <script type="application/ld+json">
@@ -48,233 +53,368 @@
   }
   </script>
 </head>
+
 <body>
-<canvas id="particles-canvas"></canvas>
+  <canvas id="particles-canvas"></canvas>
 
-<!-- NAVBAR -->
-<header class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <div class="logo-icon">VT</div>
-      <span class="logo-text">Vision<span class="accent">Techie</span></span>
-    </a>
-    <nav class="nav-links" id="nav-links">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="courses.html" class="nav-link">Courses</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-      <a href="contact.html#enroll" class="nav-cta">Enroll Now</a>
-    </nav>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-  </div>
-</header>
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">VT</div>
+        <span class="logo-text">Vision<span class="accent">Techie</span></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html#enroll" class="nav-cta">Enroll Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
 
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="hero-content">
-    <div class="hero-badge"><i class="fas fa-star"></i> India's #1 IT Training Institute</div>
-    <h1>Launch Your Career in<br/><span class="gradient-text" id="typed-text">Technology</span></h1>
-    <p class="hero-sub">Master in-demand IT skills with expert trainers, real projects & dedicated career support. Your dream tech career starts here.</p>
-    <div class="hero-btns">
-      <a href="courses.html" class="btn btn-primary"><i class="fas fa-rocket"></i> Explore Courses</a>
-      <a href="contact.html#enroll" class="btn btn-ghost"><i class="fas fa-play-circle"></i> Free Demo Class</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><i class="fas fa-handshake" style="font-size:2rem; color:var(--primary); margin-bottom:0.5rem"></i><br/><strong style="font-size:1.1rem; color:white">100% Commitment</strong><small>To Your Success</small></div>
-      <div class="sdiv"></div>
-      <div class="stat"><i class="fas fa-chalkboard-teacher" style="font-size:2rem; color:var(--primary); margin-bottom:0.5rem"></i><br/><strong style="font-size:1.1rem; color:white">Expert Trainers</strong><small>Industry Veterans</small></div>
-      <div class="sdiv"></div>
-      <div class="stat"><i class="fas fa-laptop-code" style="font-size:2rem; color:var(--primary); margin-bottom:0.5rem"></i><br/><strong style="font-size:1.1rem; color:white">Practical Focus</strong><small>Real-world Projects</small></div>
-      <div class="sdiv"></div>
-      <div class="stat"><i class="fas fa-briefcase" style="font-size:2rem; color:var(--primary); margin-bottom:0.5rem"></i><br/><strong style="font-size:1.1rem; color:white">Career Support</strong><small>Dedicated Assistance</small></div>
-    </div>
-  </div>
-  <div class="scroll-hint"><div class="mouse"><div class="wheel"></div></div><small>Scroll</small></div>
-</section>
-
-<!-- TICKER -->
-<div class="ticker"><div class="ticker-track">
-  <span><i class="fas fa-circle-check"></i> Java Full Stack</span>
-  <span><i class="fas fa-circle-check"></i> Python Full Stack</span>
-  <span><i class="fas fa-circle-check"></i> Cloud Computing</span>
-  <span><i class="fas fa-circle-check"></i> DevOps</span>
-  <span><i class="fas fa-circle-check"></i> Software Testing</span>
-  <span><i class="fas fa-circle-check"></i> Data Science & AI</span>
-  <span><i class="fas fa-circle-check"></i> Machine Learning</span>
-  <span><i class="fas fa-circle-check"></i> Cybersecurity</span>
-  <span><i class="fas fa-circle-check"></i> React JS</span>
-  <span><i class="fas fa-circle-check"></i> AWS Certified</span>
-  <span><i class="fas fa-circle-check"></i> Java Full Stack</span>
-  <span><i class="fas fa-circle-check"></i> Python Full Stack</span>
-  <span><i class="fas fa-circle-check"></i> Cloud Computing</span>
-  <span><i class="fas fa-circle-check"></i> DevOps</span>
-</div></div>
-
-<!-- WHY US -->
-<section class="section" id="why-us">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">Why VisionTechie?</span>
-      <h2>We Don't Just Train. <span class="gradient-text">We Transform.</span></h2>
-      <p>Discover what makes VisionTechie the preferred destination for IT career aspirants.</p>
-    </div>
-    <div class="features-grid">
-      <div class="feat-card"><div class="feat-icon"><i class="fas fa-chalkboard-teacher"></i></div><h3>Industry Expert Trainers</h3><p>Learn from professionals with 10+ years of real-world industry experience at top tech companies.</p></div>
-      <div class="feat-card"><div class="feat-icon"><i class="fas fa-laptop-code"></i></div><h3>Hands-On Projects</h3><p>Build portfolio-worthy projects with real industry use cases and live deployments.</p></div>
-      <div class="feat-card"><div class="feat-icon"><i class="fas fa-briefcase"></i></div><h3>Dedicated Placement Cell</h3><p>Comprehensive career support with a growing network of 20+ hiring partners and startups.</p></div>
-      <div class="feat-card"><div class="feat-icon"><i class="fas fa-clock"></i></div><h3>Flexible Timings</h3><p>Weekday, weekend & fast-track batches. Both online and offline modes available.</p></div>
-      <div class="feat-card"><div class="feat-icon"><i class="fas fa-certificate"></i></div><h3>Industry Certifications</h3><p>Earn globally recognized certificates that boost your resume and career prospects.</p></div>
-      <div class="feat-card"><div class="feat-icon"><i class="fas fa-headset"></i></div><h3>Lifetime Mentorship</h3><p>Alumni network, mentor sessions, and technical support even after course completion.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- COURSES -->
-<section class="section dark-bg" id="courses-home">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">Our Programs</span>
-      <h2>Most Popular <span class="gradient-text">Courses</span></h2>
-      <p>Industry-aligned curriculum designed to make you job-ready from day one.</p>
-    </div>
-    <div class="courses-grid">
-      <div class="course-card"><div class="c-icon java-c"><i class="fab fa-java"></i></div><div class="c-badge">Most Popular</div><h3>Java Full Stack</h3><p>Spring Boot, Hibernate, REST APIs, React JS & MySQL for enterprise-grade applications.</p><div class="c-meta"><span><i class="fas fa-clock"></i> 6 Months</span><span><i class="fas fa-signal"></i> Beginner–Pro</span></div><a href="courses.html" class="c-btn">Details <i class="fas fa-arrow-right"></i></a></div>
-      <div class="course-card"><div class="c-icon py-c"><i class="fab fa-python"></i></div><div class="c-badge hot">New Batch</div><h3>Python Full Stack</h3><p>Django, Flask, React JS & PostgreSQL. Build powerful web apps end-to-end.</p><div class="c-meta"><span><i class="fas fa-clock"></i> 5 Months</span><span><i class="fas fa-signal"></i> Beginner–Pro</span></div><a href="courses.html" class="c-btn">Details <i class="fas fa-arrow-right"></i></a></div>
-      <div class="course-card"><div class="c-icon cl-c"><i class="fas fa-cloud"></i></div><div class="c-badge">High Demand</div><h3>Cloud Computing</h3><p>AWS, Azure, GCP — architecture, deployment, serverless & DevOps integration.</p><div class="c-meta"><span><i class="fas fa-clock"></i> 4 Months</span><span><i class="fas fa-signal"></i> Intermediate</span></div><a href="courses.html" class="c-btn">Details <i class="fas fa-arrow-right"></i></a></div>
-      <div class="course-card"><div class="c-icon dv-c"><i class="fas fa-infinity"></i></div><div class="c-badge">Trending</div><h3>DevOps</h3><p>Docker, Kubernetes, Jenkins, CI/CD, Terraform & Git — full DevOps lifecycle.</p><div class="c-meta"><span><i class="fas fa-clock"></i> 4 Months</span><span><i class="fas fa-signal"></i> Intermediate</span></div><a href="courses.html" class="c-btn">Details <i class="fas fa-arrow-right"></i></a></div>
-      <div class="course-card"><div class="c-icon tst-c"><i class="fas fa-bug"></i></div><div class="c-badge">Guaranteed</div><h3>Software Testing</h3><p>Selenium, TestNG, API Testing, JIRA & Agile QA methodologies for excellence.</p><div class="c-meta"><span><i class="fas fa-clock"></i> 3 Months</span><span><i class="fas fa-signal"></i> Beginner</span></div><a href="courses.html" class="c-btn">Details <i class="fas fa-arrow-right"></i></a></div>
-      <div class="course-card"><div class="c-icon ds-c"><i class="fas fa-brain"></i></div><div class="c-badge hot">Hot 🔥</div><h3>Data Science & AI</h3><p>ML, Deep Learning, TensorFlow & Pandas — build intelligent AI-powered systems.</p><div class="c-meta"><span><i class="fas fa-clock"></i> 6 Months</span><span><i class="fas fa-signal"></i> Beginner–Pro</span></div><a href="courses.html" class="c-btn">Details <i class="fas fa-arrow-right"></i></a></div>
-    </div>
-    <div style="text-align:center;margin-top:2.5rem"><a href="courses.html" class="btn btn-primary">View All Courses <i class="fas fa-arrow-right"></i></a></div>
-  </div>
-</section>
-
-<!-- ABOUT SNIPPET -->
-<section class="section" id="about-home">
-  <div class="container about-grid">
-    <div class="about-img-box">
-      <img src="images/lab.png" alt="VisionTechie Lab" class="about-img"/>
-      <div class="ab-badge"><i class="fas fa-award"></i><div><strong>10+ Years</strong><small>Of Excellence</small></div></div>
-    </div>
-    <div class="about-txt">
-      <span class="tag">About VisionTechie</span>
-      <h2>Your Partner in <span class="gradient-text">Tech Transformation</span></h2>
-      <p>Founded with a mission to bridge the gap between academia and industry, VisionTechie has been at the forefront of IT education for over a decade. We combine rigorous technical training with soft skills development and career coaching.</p>
-      <p>Our state-of-the-art infrastructure, expert faculty and strong industry connections ensure every student gets the best shot at a rewarding tech career.</p>
-      <div class="highlights">
-        <div><i class="fas fa-check-circle"></i> NASSCOM Certified Programs</div>
-        <div><i class="fas fa-check-circle"></i> ISO 9001:2015 Certified Institute</div>
-        <div><i class="fas fa-check-circle"></i> Government Recognized Center</div>
-        <div><i class="fas fa-check-circle"></i> Rapidly Growing Partner Network</div>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-star"></i> India's #1 IT Training Institute</div>
+      <h1>Launch Your Career in<br /><span class="gradient-text" id="typed-text">Technology</span></h1>
+      <p class="hero-sub">Master in-demand IT skills with expert trainers, real projects & dedicated career support.
+        Your dream tech career starts here.</p>
+      <div class="hero-btns">
+        <a href="courses.html" class="btn btn-primary"><i class="fas fa-rocket"></i> Explore Courses</a>
+        <a href="contact.html#enroll" class="btn btn-ghost"><i class="fas fa-play-circle"></i> Free Demo Class</a>
       </div>
-      <a href="about.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section dark-bg" id="testimonials">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">Success Stories</span>
-      <h2>What Our <span class="gradient-text">Alumni Say</span></h2>
-    </div>
-    <div class="tslider" id="tslider">
-      <div class="tcard active"><div class="tq"><i class="fas fa-quote-left"></i></div><p>"VisionTechie transformed my career! I joined as a fresher and landed a Java Developer role at Infosys within 2 months of completing the course. The trainers are incredibly supportive."</p><div class="tauthor"><div class="tavatar av1">PK</div><div><strong>Priya Kumari</strong><span>Java Developer @ Infosys</span></div><div class="tstars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div></div>
-      <div class="tcard"><div class="tq"><i class="fas fa-quote-left"></i></div><p>"DevOps course is world-class! I got AWS certified and joined TCS with a 60% salary hike. Hands-on labs and real-world scenarios made all the difference in preparation."</p><div class="tauthor"><div class="tavatar av2">RS</div><div><strong>Rahul Sharma</strong><span>DevOps Engineer @ TCS</span></div><div class="tstars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div></div>
-      <div class="tcard"><div class="tq"><i class="fas fa-quote-left"></i></div><p>"I had zero tech background. VisionTechie's Data Science program opened a new world for me. Now I'm a Data Analyst at Zomato with 3x my previous salary!"</p><div class="tauthor"><div class="tavatar av3">AN</div><div><strong>Anjali Nair</strong><span>Data Analyst @ Zomato</span></div><div class="tstars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div></div>
-    </div>
-    <div class="tdots" id="tdots">
-      <button class="dot active" onclick="goTo(0)"></button>
-      <button class="dot" onclick="goTo(1)"></button>
-      <button class="dot" onclick="goTo(2)"></button>
-    </div>
-  </div>
-</section>
-
-<!-- PARTNERS -->
-<section class="section" id="partners">
-  <div class="container">
-    <div class="sec-head">
-      <span class="tag">Hiring Partners</span>
-      <h2>Our Students Work At <span class="gradient-text">Top Companies</span></h2>
-    </div>
-    <div class="partners-row">
-      <div class="partner">TCS</div><div class="partner">Infosys</div>
-      <div class="partner">Wipro</div><div class="partner">Accenture</div>
-      <div class="partner">Cognizant</div><div class="partner">HCL Tech</div>
-      <div class="partner">Capgemini</div><div class="partner">IBM</div>
-      <div class="partner">Amazon</div><div class="partner">Microsoft</div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-band" id="cta-band">
-  <div class="container">
-    <h2>Ready to Start Your <span class="gradient-text">Tech Journey?</span></h2>
-    <p>Join our growing community of learners transforming their careers. Limited seats for the upcoming batch!</p>
-    <div class="cta-btns">
-      <a href="contact.html#enroll" class="btn btn-primary btn-lg"><i class="fas fa-rocket"></i> Enroll Now – Free Inquiry</a>
-      <a href="tel:+919067731749" class="btn btn-ghost btn-lg"><i class="fas fa-phone"></i> +91 90677 31749</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="f-brand">
-      <div class="nav-logo">
-        <div class="logo-icon">VT</div><span class="logo-text">Vision<span class="accent">Techie</span></span>
-      </div>
-      <p>Premier IT training institute empowering students with cutting-edge technology skills and dedicated career support.</p>
-      <div class="socials">
-        <a href="https://facebook.com/visiontechie" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com/visiontechie" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/company/visiontechie" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://youtube.com/@visiontechie" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <div class="hero-stats">
+        <div class="stat"><i class="fas fa-handshake"
+            style="font-size:2rem; color:var(--primary); margin-bottom:0.5rem"></i><br /><strong
+            style="font-size:1.1rem; color:white">100% Commitment</strong><small>To Your Success</small></div>
+        <div class="sdiv"></div>
+        <div class="stat"><i class="fas fa-chalkboard-teacher"
+            style="font-size:2rem; color:var(--primary); margin-bottom:0.5rem"></i><br /><strong
+            style="font-size:1.1rem; color:white">Expert Trainers</strong><small>Industry Veterans</small></div>
+        <div class="sdiv"></div>
+        <div class="stat"><i class="fas fa-laptop-code"
+            style="font-size:2rem; color:var(--primary); margin-bottom:0.5rem"></i><br /><strong
+            style="font-size:1.1rem; color:white">Practical Focus</strong><small>Real-world Projects</small></div>
+        <div class="sdiv"></div>
+        <div class="stat"><i class="fas fa-briefcase"
+            style="font-size:2rem; color:var(--primary); margin-bottom:0.5rem"></i><br /><strong
+            style="font-size:1.1rem; color:white">Career Support</strong><small>Dedicated Assistance</small></div>
       </div>
     </div>
-    <div class="f-col">
-      <h4>Courses</h4>
-      <ul>
-        <li><a href="courses.html#java">Java Full Stack</a></li>
-        <li><a href="courses.html#python">Python Full Stack</a></li>
-        <li><a href="courses.html#cloud">Cloud Computing</a></li>
-        <li><a href="courses.html#devops">DevOps</a></li>
-        <li><a href="courses.html#testing">Software Testing</a></li>
-        <li><a href="courses.html#datascience">Data Science & AI</a></li>
-      </ul>
+    <div class="scroll-hint">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div><small>Scroll</small>
     </div>
-    <div class="f-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="courses.html">All Courses</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms & Conditions</a></li>
-      </ul>
-    </div>
-    <div class="f-col">
-      <h4>Contact</h4>
-      <ul class="fcontact">
-        <li><i class="fas fa-map-marker-alt"></i> Gurudwara Chowk, Akurdi, Pune | Shirpur, Dhule</li>
-        <li><i class="fas fa-phone"></i><a href="tel:+919067731749">+91 90677 31749</a></li>
-        <li><i class="fas fa-envelope"></i><a href="mailto:info@visiontechie.com">info@visiontechie.com</a></li>
-        <li><i class="fas fa-clock"></i> Mon–Sat: 8AM – 8PM</li>
-      </ul>
-    </div>
-  </div>
-  <div class="f-bottom">
-    <p>&copy; <span id="year">2026</span> VisionTechie IT Training Institute. All Rights Reserved.</p>
-  </div>
-</footer>
+  </section>
 
-<button class="scroll-top" id="scroll-top-btn"><i class="fas fa-chevron-up"></i></button>
-<a href="https://wa.me/919067731749" class="wa-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<script src="js/main.js"></script>
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span><i class="fas fa-circle-check"></i> Java Full Stack</span>
+      <span><i class="fas fa-circle-check"></i> Python Full Stack</span>
+      <span><i class="fas fa-circle-check"></i> Cloud Computing</span>
+      <span><i class="fas fa-circle-check"></i> DevOps</span>
+      <span><i class="fas fa-circle-check"></i> Software Testing</span>
+      <span><i class="fas fa-circle-check"></i> Data Science & AI</span>
+      <span><i class="fas fa-circle-check"></i> Machine Learning</span>
+      <span><i class="fas fa-circle-check"></i> React JS</span>
+      <span><i class="fas fa-circle-check"></i> AWS Certified</span>
+      <span><i class="fas fa-circle-check"></i> Java Full Stack</span>
+      <span><i class="fas fa-circle-check"></i> Python Full Stack</span>
+      <span><i class="fas fa-circle-check"></i> Cloud Computing</span>
+      <span><i class="fas fa-circle-check"></i> DevOps</span>
+    </div>
+  </div>
+
+  <!-- WHY US -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Why VisionTechie?</span>
+        <h2>We Don't Just Train. <span class="gradient-text">We Transform.</span></h2>
+        <p>Discover what makes VisionTechie the preferred destination for IT career aspirants.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feat-card">
+          <div class="feat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Industry Expert Trainers</h3>
+          <p>Learn from professionals with 10+ years of real-world industry experience at top tech companies.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Hands-On Projects</h3>
+          <p>Build portfolio-worthy projects with real industry use cases and live deployments.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Dedicated Placement Cell</h3>
+          <p>Comprehensive career support with a growing network of 20+ hiring partners and startups.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon"><i class="fas fa-clock"></i></div>
+          <h3>Flexible Timings</h3>
+          <p>Weekday, weekend & fast-track batches. Both online and offline modes available.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Industry Certifications</h3>
+          <p>Earn globally recognized certificates that boost your resume and career prospects.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon"><i class="fas fa-headset"></i></div>
+          <h3>Lifetime Mentorship</h3>
+          <p>Alumni network, mentor sessions, and technical support even after course completion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section dark-bg" id="courses-home">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Our Programs</span>
+        <h2>Most Popular <span class="gradient-text">Courses</span></h2>
+        <p>Industry-aligned curriculum designed to make you job-ready from day one.</p>
+      </div>
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="c-icon java-c"><i class="fab fa-java"></i></div>
+          <div class="c-badge">Most Popular</div>
+          <h3>Java Full Stack</h3>
+          <p>Spring Boot, Hibernate, REST APIs, React JS & MySQL for enterprise-grade applications.</p>
+          <div class="c-meta"><span><i class="fas fa-clock"></i> 6 Months</span><span><i class="fas fa-signal"></i>
+              Beginner–Pro</span></div><a href="courses.html" class="c-btn">Details <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="course-card">
+          <div class="c-icon py-c"><i class="fab fa-python"></i></div>
+          <div class="c-badge hot">New Batch</div>
+          <h3>Python Full Stack</h3>
+          <p>Django, Flask, React JS & PostgreSQL. Build powerful web apps end-to-end.</p>
+          <div class="c-meta"><span><i class="fas fa-clock"></i> 5 Months</span><span><i class="fas fa-signal"></i>
+              Beginner–Pro</span></div><a href="courses.html" class="c-btn">Details <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="course-card">
+          <div class="c-icon cl-c"><i class="fas fa-cloud"></i></div>
+          <div class="c-badge">High Demand</div>
+          <h3>Cloud Computing</h3>
+          <p>AWS, Azure, GCP — architecture, deployment, serverless & DevOps integration.</p>
+          <div class="c-meta"><span><i class="fas fa-clock"></i> 4 Months</span><span><i class="fas fa-signal"></i>
+              Intermediate</span></div><a href="courses.html" class="c-btn">Details <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="course-card">
+          <div class="c-icon dv-c"><i class="fas fa-infinity"></i></div>
+          <div class="c-badge">Trending</div>
+          <h3>DevOps</h3>
+          <p>Docker, Kubernetes, Jenkins, CI/CD, Terraform & Git — full DevOps lifecycle.</p>
+          <div class="c-meta"><span><i class="fas fa-clock"></i> 4 Months</span><span><i class="fas fa-signal"></i>
+              Intermediate</span></div><a href="courses.html" class="c-btn">Details <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="course-card">
+          <div class="c-icon tst-c"><i class="fas fa-bug"></i></div>
+          <div class="c-badge">Guaranteed</div>
+          <h3>Software Testing</h3>
+          <p>Selenium, TestNG, API Testing, JIRA & Agile QA methodologies for excellence.</p>
+          <div class="c-meta"><span><i class="fas fa-clock"></i> 3 Months</span><span><i class="fas fa-signal"></i>
+              Beginner</span></div><a href="courses.html" class="c-btn">Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="course-card">
+          <div class="c-icon ds-c"><i class="fas fa-brain"></i></div>
+          <div class="c-badge hot">Hot 🔥</div>
+          <h3>Data Science & AI</h3>
+          <p>ML, Deep Learning, TensorFlow & Pandas — build intelligent AI-powered systems.</p>
+          <div class="c-meta"><span><i class="fas fa-clock"></i> 6 Months</span><span><i class="fas fa-signal"></i>
+              Beginner–Pro</span></div><a href="courses.html" class="c-btn">Details <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem"><a href="courses.html" class="btn btn-primary">View All Courses
+          <i class="fas fa-arrow-right"></i></a></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SNIPPET -->
+  <section class="section" id="about-home">
+    <div class="container about-grid">
+      <div class="about-img-box">
+        <img src="images/lab.png" alt="VisionTechie Lab" class="about-img" />
+        <div class="ab-badge"><i class="fas fa-award"></i>
+          <div><strong>10+ Years</strong><small>Of Excellence</small></div>
+        </div>
+      </div>
+      <div class="about-txt">
+        <span class="tag">About VisionTechie</span>
+        <h2>Your Partner in <span class="gradient-text">Tech Transformation</span></h2>
+        <p>Founded with a mission to bridge the gap between academia and industry, VisionTechie has been at the
+          forefront of IT education for over a decade. We combine rigorous technical training with soft skills
+          development and career coaching.</p>
+        <p>Our state-of-the-art infrastructure, expert faculty and strong industry connections ensure every student gets
+          the best shot at a rewarding tech career.</p>
+        <div class="highlights">
+          <div><i class="fas fa-check-circle"></i> NASSCOM Certified Programs</div>
+          <div><i class="fas fa-check-circle"></i> ISO 9001:2015 Certified Institute</div>
+          <div><i class="fas fa-check-circle"></i> Government Recognized Center</div>
+          <div><i class="fas fa-check-circle"></i> Rapidly Growing Partner Network</div>
+        </div>
+        <a href="about.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section dark-bg" id="testimonials">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Success Stories</span>
+        <h2>What Our <span class="gradient-text">Alumni Say</span></h2>
+      </div>
+      <div class="tslider" id="tslider">
+        <div class="tcard active">
+          <div class="tq"><i class="fas fa-quote-left"></i></div>
+          <p>"VisionTechie transformed my career! I joined as a fresher and landed a Java Developer role at Infosys
+            within 2 months of completing the course. The trainers are incredibly supportive."</p>
+          <div class="tauthor">
+            <div class="tavatar av1">PK</div>
+            <div><strong>Priya Kumari</strong><span>Java Developer @ Infosys</span></div>
+            <div class="tstars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="tq"><i class="fas fa-quote-left"></i></div>
+          <p>"DevOps course is world-class! I got AWS certified and joined TCS with a 60% salary hike. Hands-on labs and
+            real-world scenarios made all the difference in preparation."</p>
+          <div class="tauthor">
+            <div class="tavatar av2">RS</div>
+            <div><strong>Rahul Sharma</strong><span>DevOps Engineer @ TCS</span></div>
+            <div class="tstars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="tq"><i class="fas fa-quote-left"></i></div>
+          <p>"I had zero tech background. VisionTechie's Data Science program opened a new world for me. Now I'm a Data
+            Analyst at Zomato with 3x my previous salary!"</p>
+          <div class="tauthor">
+            <div class="tavatar av3">AN</div>
+            <div><strong>Anjali Nair</strong><span>Data Analyst @ Zomato</span></div>
+            <div class="tstars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="tdots" id="tdots">
+        <button class="dot active" onclick="goTo(0)"></button>
+        <button class="dot" onclick="goTo(1)"></button>
+        <button class="dot" onclick="goTo(2)"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="section" id="partners">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Hiring Partners</span>
+        <h2>Our Students Work At <span class="gradient-text">Top Companies</span></h2>
+      </div>
+      <div class="partners-row">
+        <div class="partner">TCS</div>
+        <div class="partner">Infosys</div>
+        <div class="partner">Wipro</div>
+        <div class="partner">Accenture</div>
+        <div class="partner">Cognizant</div>
+        <div class="partner">HCL Tech</div>
+        <div class="partner">Capgemini</div>
+        <div class="partner">IBM</div>
+        <div class="partner">Amazon</div>
+        <div class="partner">Microsoft</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" id="cta-band">
+    <div class="container">
+      <h2>Ready to Start Your <span class="gradient-text">Tech Journey?</span></h2>
+      <p>Join our growing community of learners transforming their careers. Limited seats for the upcoming batch!</p>
+      <div class="cta-btns">
+        <a href="contact.html#enroll" class="btn btn-primary btn-lg"><i class="fas fa-rocket"></i> Enroll Now – Free
+          Inquiry</a>
+        <a href="tel:+919067731749" class="btn btn-ghost btn-lg"><i class="fas fa-phone"></i> +91 90677 31749</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="f-brand">
+        <div class="nav-logo">
+          <div class="logo-icon">VT</div><span class="logo-text">Vision<span class="accent">Techie</span></span>
+        </div>
+        <p>Premier IT training institute empowering students with cutting-edge technology skills and dedicated career
+          support.</p>
+        <div class="socials">
+          <a href="https://facebook.com/visiontechie" target="_blank" aria-label="Facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/visiontechie" target="_blank" aria-label="Instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/company/visiontechie" target="_blank" aria-label="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/@visiontechie" target="_blank" aria-label="YouTube"><i
+              class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Courses</h4>
+        <ul>
+          <li><a href="courses.html#java">Java Full Stack</a></li>
+          <li><a href="courses.html#python">Python Full Stack</a></li>
+          <li><a href="courses.html#cloud">Cloud Computing</a></li>
+          <li><a href="courses.html#devops">DevOps</a></li>
+          <li><a href="courses.html#testing">Software Testing</a></li>
+          <li><a href="courses.html#datascience">Data Science & AI</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Contact</h4>
+        <ul class="fcontact">
+          <li><i class="fas fa-map-marker-alt"></i> Gurudwara Chowk, Akurdi, Pune | Shirpur, Dhule</li>
+          <li><i class="fas fa-phone"></i><a href="tel:+919067731749">+91 90677 31749</a></li>
+          <li><i class="fas fa-envelope"></i><a href="mailto:info@visiontechie.com">info@visiontechie.com</a></li>
+          <li><i class="fas fa-clock"></i> Mon–Sat: 8AM – 8PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <p>&copy; <span id="year">2026</span> VisionTechie IT Training Institute. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top-btn"><i class="fas fa-chevron-up"></i></button>
+  <a href="https://wa.me/919067731749" class="wa-btn" target="_blank" aria-label="WhatsApp"><i
+      class="fab fa-whatsapp"></i></a>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
